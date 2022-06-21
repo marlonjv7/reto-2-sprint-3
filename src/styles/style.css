@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(233deg, 11%, 84%);
+}
+body .DivActive p {
+  color: hsl(237deg, 14%, 26%);
+  cursor: pointer;
+}
+body .DivActive p:hover {
+  color: hsl(220deg, 98%, 61%);
+}
+body .DivActive p:focus {
+  color: hsl(220deg, 98%, 61%);
+}
+body input[type=checkbox]:checked ~ label {
+  text-decoration: line-through;
+}
+body .close {
+  width: 12px !important;
+  height: 12px !important;
+  cursor: pointer;
+  background-color: linear-gradient hsl(192deg, 100%, 67%) to hsl(280deg, 87%, 65%) !important;
+}
+body .close:hover {
+  filter: hue-rotate(100deg);
+  mix-blend-mode: multiply;
+  width: 15px !important;
+  height: 15px !important;
+}
+body .close:focus {
+  color: hsl(220deg, 98%, 61%);
+}
+
+.light {
+  background-color: hsl(236deg, 33%, 92%);
+  height: 100%;
+}
+.light .DivTitle {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.light .DivTareas {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.light .BordeTarea {
+  border-bottom: 1px solid hsl(233deg, 11%, 84%);
+}
+
+.dark {
+  background-color: hsl(235deg, 21%, 11%);
+  height: 100%;
+  color: hsl(233deg, 14%, 35%);
+}
+.dark .DivTitle {
+  background-color: hsl(235deg, 24%, 19%);
+}
+.dark .DivTareas {
+  background-color: hsl(235deg, 24%, 19%);
+}
+.dark .BordeTarea {
+  border-bottom: 1px solid hsl(233deg, 14%, 35%);
+}
+
+.img1 {
+  display: none;
+}
+
+.img2 {
+  cursor: pointer;
+}
+
+.piePagina section {
+  font-size: 14px !important;
+}
+
+.footer {
+  font-size: 12px !important;
+  color: hsl(233deg, 14%, 35%);
+}
+
+/*# sourceMappingURL=style.css.map */

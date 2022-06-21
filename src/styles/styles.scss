@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+// neutral
+$color-1: hsl(220, 98%, 61%);
+$color-2: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+// tema claro
+$colorLight-1: hsl(0, 0%, 98%);
+$colorLight-2: hsl(236, 33%, 92%);
+$colorLight-3: hsl(233, 11%, 84%);
+$colorLight-4: hsl(236, 9%, 61%);
+$colorLight-5: hsl(235, 19%, 35%);
+
+// tema oscuro
+$colorDark-1: hsl(235, 21%, 11%);
+$colorDark-2: hsl(235, 24%, 19%);
+$colorDark-3: hsl(234, 39%, 85%);
+$colorDark-4: hsl(236, 33%, 92%); // hover
+$colorDark-5: hsl(234, 11%, 52%);
+$colorDark-6: hsl(233, 14%, 35%);
+$colorDark-7: hsl(237, 14%, 26%);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $colorLight-3;
+
+    .DivActive {
+        p {
+            color: $colorDark-7;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-1;
+            }
+
+            &:focus {
+                color: $color-1;
+            }
+        }
+    }
+
+    input[type=checkbox]:checked~label {
+        text-decoration: line-through;
+    }
+
+    .close {
+        width: 12px !important;
+        height: 12px !important;
+        cursor: pointer;
+        background-color: $color-2  !important;
+
+        &:hover {
+            filter: hue-rotate(100deg);
+            mix-blend-mode: multiply;
+            width: 15px !important;
+            height: 15px !important;
+        }
+
+        &:focus {
+            color: $color-1;
+        }
+    }
+}
+
+.light {
+    background-color: $colorLight-2;
+    height: 100%;
+
+    .DivTitle {
+        background-color: $colorLight-1;
+    }
+
+    .DivTareas {
+        background-color: $colorLight-1;
+    }
+
+    .BordeTarea {
+        border-bottom: 1px solid $colorLight-3;
+    }
+}
+
+
+.dark {
+    background-color: $colorDark-1;
+    height: 100%;
+    color: $colorDark-6;
+
+    .DivTitle {
+        background-color: $colorDark-2;
+    }
+
+    .DivTareas {
+        background-color: $colorDark-2;
+    }
+
+    .BordeTarea {
+        border-bottom: 1px solid $colorDark-6 ;
+    }
+}
+
+.img1 {
+    display: none;
+}
+
+.img2 {
+    cursor: pointer;
+}
+
+.piePagina section {
+    font-size: 14px !important;
+}
+
+.footer {
+    font-size: 12px !important;
+    color: $colorDark-6;
+}
